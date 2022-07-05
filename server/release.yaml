@@ -16,3 +16,4 @@ spec:
       containers:
         - name: busybox
           image: busybox:latest
+      restartPolicy: Never

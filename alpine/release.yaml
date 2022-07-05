@@ -16,3 +16,4 @@ spec:
       containers:
         - name: alpine
           image: alpine:latest
+      restartPolicy: Never
