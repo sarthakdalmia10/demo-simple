@@ -1,18 +1,18 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-  name: hello-world
-  namespace: hello-world
+  name: busybox
+  namespace: busybox
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
-      deploy: demo-deploy
+      deploy: demo-busybox
   template:
     metadata:
       labels:
-        deploy: demo-deploy
+        deploy: demo-busybox
     spec:
       containers:
-        - name: hello-world
-          image: hello-world:latest
+        - name: busybox
+          image: busybox:latest
